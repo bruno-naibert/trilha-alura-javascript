@@ -1,6 +1,6 @@
 class Mensagem {
 
-	constructor(texto='Olá') {
+	constructor(texto='') {
 
 		this._texto = texto;
 
