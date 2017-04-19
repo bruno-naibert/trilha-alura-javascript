@@ -3,7 +3,7 @@ class NegociacaoController {
 	constructor(){
 
 		let $ = document.querySelector.bind(document);
-		
+
 		this._inputData = $('#data');
 		this._inputQuantidade = $('#quantidade');
 		this._inputValor = $('#valor');
@@ -25,6 +25,30 @@ class NegociacaoController {
 		this._listaNegociacoes.adiciona(this._criaNegociacao());	
 		this._mensagem.texto = 'Negociação adicionada com sucesso!';
 		this._limpaFormulario();
+	}
+
+	importaNegociacoes() {
+
+		let xhr = XMLHttpRequest();
+
+		xhr.open('GET', 'negociacoes/semana');
+
+		xhr.onreadystatechange = () => {
+
+		if(xhr.readState == 4) {
+
+			if(xhr.status == 200) {
+
+				console.log('Obtendo as negociações do servidor');
+				
+			} else {
+
+				console.log('Não foi possível obter as negociações do servidor');
+			}
+		}	
+		}
+
+		xhr.send();
 	}
 
 	apaga() {
