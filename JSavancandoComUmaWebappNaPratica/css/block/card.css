@@ -1,7 +1,22 @@
 .card {
-	background-color: #EBEF40;
 	box-sizing: border-box;
 	display: inline-block;
 	padding: 16px;
 	width: 25%
+}
+
+.card_colorFirst {
+	background-color: #45AAEE;
+}
+
+.card_colorSecond {
+	background-color: #FF1010;
+}
+
+.card_colorThird {
+	background-color: #76EF40;
+}
+
+.card_colorFourth {
+	background-color: #EBEF40;
 }
