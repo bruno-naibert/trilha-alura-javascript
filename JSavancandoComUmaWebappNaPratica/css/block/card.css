@@ -1,0 +1,7 @@
+.card {
+	background-color: #EBEF40;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 16px;
+	width: 25%
+}
