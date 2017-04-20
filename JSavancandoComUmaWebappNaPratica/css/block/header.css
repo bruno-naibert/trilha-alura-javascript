@@ -1,11 +1,31 @@
 .header {
-	background-color: #51B0DC;
+	background-color: #0082C7;
+	height: 40px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .header-title {
 	color: #B3DAEE;
+	display: inline;
+	vertical-align: middle;
+}
+
+.header-menu {
+	float: right;
+}
+
+.header-button:first-child {
+	margin-right: 15px;
 }
 
 .header-button {
-	background-color: #006195;	
+	background-color: #006195;
+	box-sizing: content-box;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	height: 22px;
+	margin-left: auto;
+	padding: 8px;	
 }
