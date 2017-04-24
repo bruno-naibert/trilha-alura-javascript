@@ -14,7 +14,7 @@
 	background-color: #EBEF40;
 }
 
-.wrap-card-colors {
+.wrap-card-options {
 	left: 0;
 	position: absolute;
 	top: -16px;
@@ -28,7 +28,7 @@
 	width: 25%
 }
 
-.card-colors {
+.card-options {
 	border: 2px solid rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
 	box-sizing: border-box;
@@ -37,6 +37,14 @@
 	overflow: hidden;
 	text-indent: -9999px;
 	width: 32px;
+}
+
+.card_delete {
+	background-color: #fff;
+	background-image: url('../../images/delete.svg');
+	background-repeat: no-repeat;
+	background-size: 72%;
+	background-position: center;
 }
 
 .card .isActive {
