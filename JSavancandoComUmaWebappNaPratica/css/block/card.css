@@ -1,6 +1,7 @@
 .card {
 	box-sizing: border-box;
 	display: inline-block;
+	position: relative;
 	padding: 16px;
 	width: 25%
 }
@@ -19,6 +20,12 @@
 
 .card_colorFourth {
 	background-color: #EBEF40;
+}
+
+.wrap-card-colors {
+	left: 0;
+	position: absolute;
+	top: -16px;
 }
 
 .card-colors {
