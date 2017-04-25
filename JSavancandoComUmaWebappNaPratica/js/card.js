@@ -7,9 +7,10 @@ for (var index = 0; index < $cards.length; index++) {
 
 		var $this = event.target;
 		var $card = this;
+		var $cardContent = $card.querySelector('.card-content');
 
 		if ($this.dataset.color) {
-			
+
 			$card.dataset.color = $this.dataset.color;
 
 			for (var position = 0; position < $cardColors.length; position++) {
@@ -21,8 +22,12 @@ for (var index = 0; index < $cards.length; index++) {
 		if ($this.classList.contains('card_delete')) {
 
 			$card.remove();
-		}
-		
+		};
+
+		if ($this.classList.contains('card_edit')) {
+
+			$cardContent.setAttribute('contenteditable', 'true');
+			$cardContent.focus();
+		};
 	});
 };
-

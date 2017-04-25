@@ -20,6 +20,10 @@
 	width: 32px;
 }
 
+.card .isActive {
+	border-width: 4px;
+}
+
 .card_delete {
 	background-image: url('../../images/delete.svg');
 	background-size: 72%;
@@ -31,8 +35,8 @@
 	background-size: 65%;
 }
 
-.card .isActive {
-	border-width: 4px;
+.card-content[contenteditable="true"] {
+	outline: 2px dashed rgba(0, 0, 0, 0.5);
 }
 
 [data-color="first"] {
