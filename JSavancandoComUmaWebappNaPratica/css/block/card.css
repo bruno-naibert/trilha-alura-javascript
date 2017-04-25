@@ -1,3 +1,40 @@
+.card {
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+	padding: 16px;
+	width: 25%
+}
+
+.card-options {
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 32px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 32px;
+}
+
+.card_delete {
+	background-image: url('../../images/delete.svg');
+	background-size: 72%;
+	margin-right: 15px;
+}
+
+.card_edit {
+	background-image: url('../../images/edit.svg');
+	background-size: 65%;
+}
+
+.card .isActive {
+	border-width: 4px;
+}
+
 [data-color="first"] {
 	background-color: #45AAEE;
 }
@@ -18,35 +55,4 @@
 	left: 0;
 	position: absolute;
 	top: -16px;
-}
-
-.card {
-	box-sizing: border-box;
-	display: inline-block;
-	position: relative;
-	padding: 16px;
-	width: 25%
-}
-
-.card-options {
-	border: 2px solid rgba(0, 0, 0, 0.5);
-	border-radius: 50%;
-	box-sizing: border-box;
-	display: inline-block;
-	height: 32px;
-	overflow: hidden;
-	text-indent: -9999px;
-	width: 32px;
-}
-
-.card_delete {
-	background-color: #fff;
-	background-image: url('../../images/delete.svg');
-	background-repeat: no-repeat;
-	background-size: 72%;
-	background-position: center;
-}
-
-.card .isActive {
-	border-width: 4px;
 }
