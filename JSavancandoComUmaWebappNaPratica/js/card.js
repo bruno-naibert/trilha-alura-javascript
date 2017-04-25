@@ -25,9 +25,15 @@ for (var index = 0; index < $cards.length; index++) {
 		};
 
 		if ($this.classList.contains('card_edit')) {
-
-			$cardContent.setAttribute('contenteditable', 'true');
-			$cardContent.focus();
+			if ($cardContent.getAttribute('contenteditable') == 'false') {
+				$cardContent.setAttribute('contenteditable', 'true');
+				$cardContent.focus();
+				$this.classList.add('isActive');
+			} else {
+				$cardContent.setAttribute('contenteditable', 'false');
+				$cardContent.blur();
+				$this.classList.remove('isActive');
+			};
 		};
 	});
 };
