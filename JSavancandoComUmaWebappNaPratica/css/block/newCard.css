@@ -5,13 +5,20 @@
 }
 
 .newCard-content {
+  border: solid 1px #FFF;
   display: block;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   height: 24px;
   padding: 10px;
+  transition: height 0.3s linear,
+              border 0.5s linear;
   width: 560px;
+}
+
+.newCard-content:focus {
+  border: solid 1px #555;
+  height: 150px;
 }
 
 .newCard-action {
@@ -22,5 +29,6 @@
   height: 34px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   width: 84px;
 }
