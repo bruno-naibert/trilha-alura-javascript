@@ -16,6 +16,7 @@
 
 .newCard-action {
   background-color: #8272C7;
+  cursor: pointer;
   display: block;
   font-size: 16px;
   height: 34px;
