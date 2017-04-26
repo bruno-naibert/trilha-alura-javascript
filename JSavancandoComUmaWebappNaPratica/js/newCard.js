@@ -1,10 +1,19 @@
 var $newCard = document.querySelector('.newCard');
 var $newCardContent = document.querySelector('.newCard-content');
+var $newCardAction = document.querySelector('.newCardAction');
 
 $newCard.addEventListener('submit', function(event) {
 
   if ($newCardContent.value == '') {
     event.preventDefault();
-    console.log('Está vazio!');
-  }
+
+    if (document.querySelector('.error') == null) {
+
+      var $error = document.createElement('span');
+
+      $error.classList.add('error');
+      $error.textContent = 'Por favor, preencha o campo a cima.';
+      $newCard.insertBefore($error, $newCardAction);
+    };
+  };
 });
