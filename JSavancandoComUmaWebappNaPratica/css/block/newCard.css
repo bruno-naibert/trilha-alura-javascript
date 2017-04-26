@@ -1,0 +1,25 @@
+.newCard {
+  background-color: #C5C5C5;
+  margin-bottom: 40px;
+  padding: 24px 124px;
+}
+
+.newCard-content {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 24px;
+  padding: 10px;
+  width: 560px;
+}
+
+.newCard-action {
+  background-color: #8272C7;
+  display: block;
+  font-size: 16px;
+  height: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 84px;
+}
