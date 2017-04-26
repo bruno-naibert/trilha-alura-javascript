@@ -14,8 +14,8 @@ $newCardContent.addEventListener('input', function(){
 
 $newCard.addEventListener('submit', function(event) {
 
+  event.preventDefault();
   if ($newCardContent.value == '') {
-    event.preventDefault();
 
     if (document.querySelector('.error') == null) {
 
@@ -25,5 +25,12 @@ $newCard.addEventListener('submit', function(event) {
       $error.textContent = 'Por favor, preencha o campo a cima.';
       $newCard.insertBefore($error, $newCardAction);
     };
+  } else {
+    var $wrapCard = document.querySelector('.wrap-card');
+    var $card = document.querySelector('.card');
+    var $copyCard = $card.cloneNode(true);
+
+    $copyCard.querySelector('.card-content').textContent = $newCardContent.value;
+    $wrapCard.insertBefore($copyCard, $card);
   };
 });
