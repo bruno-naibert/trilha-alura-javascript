@@ -1,6 +1,16 @@
 var $newCard = document.querySelector('.newCard');
 var $newCardContent = document.querySelector('.newCard-content');
-var $newCardAction = document.querySelector('.newCardAction');
+var $newCardAction = document.querySelector('.newCard-action');
+
+$newCardContent.addEventListener('input', function(){
+
+  var $error = document.querySelector('.error');
+
+  if ($error != null) {
+
+    $error.remove();
+  };
+});
 
 $newCard.addEventListener('submit', function(event) {
 
